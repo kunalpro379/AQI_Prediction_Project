@@ -3,6 +3,7 @@ import AirComposition from "./components/AirComposition.jsx";
 import PredictionCards from "./components/PredictionCards.jsx";
 import React from "react";
 import PredictionTabs from "./components/PredictionTabs.jsx";
+import DataAnalysis from "./components/DataAnalysis.jsx";
 
 export default function App() {
   return (
@@ -16,17 +17,20 @@ export default function App() {
 
       {/* Right Section */}
       <div className="flex flex-col w-full md:w-1/2 space-y-6">
-        {/* Map Section */}
-        <div className="h-64 md:h-[250px] bg-white shadow-lg rounded-xl overflow-hidden">
-          <Map />
-        </div>
 
         {/* Air Composition */}
         <div className="bg-white shadow-lg rounded-xl p-6 backdrop-blur-lg">
           <AirComposition />
         </div>
+        {/* Map Section */}
+        <div className="h-64 md:h-[250px] bg-white shadow-lg rounded-xl overflow-hidden">
+          <Map />
+        </div>
+      <div>
+        <h1 className="App text-2xl font-bold text-center">AQI Analytics</h1>
+        {/* <DataAnalysis/> */}
       </div>
-      
+      </div>
     </div>
   );
 }
