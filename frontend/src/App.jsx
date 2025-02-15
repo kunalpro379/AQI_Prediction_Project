@@ -11,19 +11,16 @@ export default function App() {
     <div className="flex flex-col md:flex-row w-full min-h-screen bg-gray-100 p-6 space-y-6 md:space-y-0 md:space-x-6">
       
       {/* Left Section */}
-      <div className="flex flex-col w-full bg-black/10 rounded-md p-4 md:w-1/2 space-y-6">
+      <div className="w-full h-full flex flex-col w-full bg-black/10 rounded-md p-4 md:w-1/2 space-y-6">
           <PredictionCards />
           <PredictionTabs />
-          <RealTimeAQI /> {/* New component added here */}
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-col w-full md:w-1/2 space-y-6">
-        <div className="bg-white shadow-lg rounded-xl p-6 backdrop-blur-lg">
+      <div className="flex flex-col bg-black/10 rounded-md p-4 md:w-full space-y-6 w-full md:w-1/2 space-y-6 ">
+          <RealTimeAQI /> {/* New component added here */}
           <AirComposition />
-        </div>
         <div>
-          
         </div>
       </div>
     </div>
