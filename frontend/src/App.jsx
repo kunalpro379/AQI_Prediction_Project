@@ -5,6 +5,7 @@ import React from "react";
 import PredictionTabs from "./components/PredictionTabs.jsx";
 import DataAnalysis from "./components/DataAnalysis.jsx";
 import RealTimeAQI from "./components/RealtimeAQI.jsx";
+import PredictionGraphs from "./components/PredictionGraphs.jsx";
 
 export default function App() {
   return (
@@ -20,8 +21,7 @@ export default function App() {
       <div className="flex flex-col bg-black/10 rounded-md p-4 md:w-full space-y-6 w-full md:w-1/2 space-y-6 ">
           <RealTimeAQI /> {/* New component added here */}
           <AirComposition />
-        <div>
-        </div>
+          <PredictionGraphs/>
       </div>
     </div>
   );

@@ -195,5 +195,18 @@ def get_forecast():
         print(f"Error in forecast: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
+@app.route('/co2-forecast')
+def co2_forecast():
+    data = [
+        {"date": "2025-02-16", "aqi": 120, "co2": 400, "temperature": 22, "humidity": 50},
+        {"date": "2025-02-17", "aqi": 130, "co2": 420, "temperature": 23, "humidity": 48},
+        {"date": "2025-02-18", "aqi": 110, "co2": 410, "temperature": 21, "humidity": 55},
+        {"date": "2025-02-19", "aqi": 150, "co2": 450, "temperature": 24, "humidity": 45},
+        {"date": "2025-02-20", "aqi": 140, "co2": 430, "temperature": 25, "humidity": 42},
+        {"date": "2025-02-21", "aqi": 135, "co2": 425, "temperature": 22, "humidity": 47},
+        {"date": "2025-02-22", "aqi": 125, "co2": 415, "temperature": 23, "humidity": 49},
+    ]
+    return jsonify(data)
+
 if __name__ == '__main__':
     app.run(debug=True)
