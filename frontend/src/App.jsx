@@ -4,6 +4,7 @@ import PredictionCards from "./components/PredictionCards.jsx";
 import React from "react";
 import PredictionTabs from "./components/PredictionTabs.jsx";
 import DataAnalysis from "./components/DataAnalysis.jsx";
+import RealTimeAQI from "./components/RealtimeAQI.jsx";
 
 export default function App() {
   return (
@@ -13,23 +14,17 @@ export default function App() {
       <div className="flex flex-col w-full bg-black/10 rounded-md p-4 md:w-1/2 space-y-6">
           <PredictionCards />
           <PredictionTabs />
+          <RealTimeAQI /> {/* New component added here */}
       </div>
 
       {/* Right Section */}
       <div className="flex flex-col w-full md:w-1/2 space-y-6">
-
-        {/* Air Composition */}
         <div className="bg-white shadow-lg rounded-xl p-6 backdrop-blur-lg">
           <AirComposition />
         </div>
-        {/* Map Section */}
-        <div className="h-64 md:h-[250px] bg-white shadow-lg rounded-xl overflow-hidden">
-          <Map />
+        <div>
+          
         </div>
-      <div>
-        <h1 className="App text-2xl font-bold text-center">AQI Analytics</h1>
-        {/* <DataAnalysis/> */}
-      </div>
       </div>
     </div>
   );
