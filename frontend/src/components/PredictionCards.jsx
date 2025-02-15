@@ -101,14 +101,6 @@ export default function PredictionCards() {
     >
       <div className="flex w-full justify-between items-center p-1">
         <h2 className="text-xl font-bold ">{location}</h2>
-        {weather.temp !== null && weather.humidity !== null ? (
-          <div className="flex justify-between align-center text-white px-4 py-2 rounded-md">
-            <p className="bg-blue-700 px-4 py-3 rounded-l-md">Temp: {weather.temp}°C</p>
-            <p className="bg-red-700 px-4 py-3 rounded-r-md">Humidity: {weather.humidity}%</p>
-          </div>
-        ) : (
-          <p>Loading weather...</p>
-        )}
       </div>
       <div className="flex flex-col gap-4 justify-center items-center md:lg:flex-row">
         {predictions.map((prediction) => (

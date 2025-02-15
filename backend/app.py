@@ -11,7 +11,7 @@ from flask_cors import CORS
 from firebase_admin import credentials, db
 
 if not firebase_admin._apps:  # Ensure Firebase is initialized only once
-    cred = credentials.Certificate(r"C:\Users\Vinit Solanki\OneDrive\Documents\VESIT Files\AQI_Prediction\backend\aqi-iot-1d315-firebase-adminsdk-fbsvc-83cac332b8.json")
+    cred = credentials.Certificate(r"C:\Users\Vinit Solanki\OneDrive\Documents\VESIT Files\AQI_Prediction\backend\aqi-iot-1d315-firebase-adminsdk-fbsvc-cacbb9f9f1.json")
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://aqi-iot-1d315-default-rtdb.firebaseio.com/'
     })
@@ -22,7 +22,7 @@ CORS(app)  # Enable CORS for all routes
 
 # Initialize Firebase with error handling
 try:
-    cred = credentials.Certificate(r"C:\Users\Vinit Solanki\OneDrive\Documents\VESIT Files\AQI_Prediction\backend\aqi-iot-1d315-firebase-adminsdk-fbsvc-e3649204b1.json")
+    cred = credentials.Certificate(r"C:\Users\Vinit Solanki\OneDrive\Documents\VESIT Files\AQI_Prediction\backend\aqi-iot-1d315-firebase-adminsdk-fbsvc-cacbb9f9f1.json")
     firebase_admin.initialize_app(cred, {
         'databaseURL': 'https://aqi-iot-1d315-default-rtdb.firebaseio.com/'
     })

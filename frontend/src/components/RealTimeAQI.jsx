@@ -41,9 +41,9 @@ export default function RealTimeAQI() {
 
   return (
     <div className="w-full flex justify-center md:justify-start">
-      <div className="bg-white/90 backdrop-blur-lg shadow-xl rounded-2xl p-6 md:p-8 w-full max-w-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+      <div className="bg-white/90 backdrop-blur-lg shadow-xl rounded-2xl p-4 md:p-6 w-full max-w-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
         <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center md:text-left">
-          🌍 Real-Time AQI
+          🌍 Real-Time Data
         </h2>
 
         {loading ? (
